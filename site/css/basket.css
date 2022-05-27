@@ -1,0 +1,16 @@
+
+td > img {
+	width:100px;
+}
+
+.delete{
+	width:70px;
+}
+
+.delete > img{
+	width:50px;
+}
+
+.delete:hover{
+	cursor:pointer;
+}

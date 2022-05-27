@@ -1,0 +1,77 @@
+
+.product_container{
+	display:grid;
+	padding:20px;
+	background-color:orange;
+	grid-gap:5px;
+	grid-template-columns:20% 20% 20% 20% 20%;
+}
+
+.product_container > .main, .product_container > .aside{
+	padding:10px;
+	margin-top:10px;
+}
+
+.product_container > .main{
+	grid-column:1/5;
+	background-color:orange;
+	background-color:white;
+	
+}
+
+.product_container > .main > div{
+	display:inline-block;
+	background-color:purple;
+	background-color:white;
+	padding:3px;
+	margin:3px;
+	
+}
+
+.product_container > .main > div > img{
+	display:block;
+	width:60%;
+	margin-left: auto;
+	margin-right: auto;
+	padding:40px;
+	border-bottom:1px solid black;
+	border-top:1px solid black;
+	border-radius:10%;
+}
+
+.product_container > .main > div > h1{
+	font-size:1.5rem;
+	color:orange;
+}
+
+.product_container > .main > div > h2{
+	font-size:1.1rem;
+}
+
+.product_container > .main > div > p{
+	font-size:1.2rem;
+	color:black;
+	background-color:rgb(211,211,211);
+	padding:5%;
+	border-radius:10%;
+}
+
+.product_container > .aside{
+	grid-column:5/6;
+	background-color:yellow;
+}
+
+.product_container > .aside > div > a{
+	color:black;
+	text-decoration:none;
+	font-size:1.2rem;
+}
+
+.product_container > .aside > div > a > img{
+	height:100px;
+}
+
+@media only screen and (max-width: 500px) {
+.product_container > .aside{grid-column:1/6;}
+.product_container > .main{grid-column:1/6;}
+}

@@ -1,0 +1,10 @@
+.logo{
+	display:inline-block;
+	width:100%;
+	border:6px solid yellow;
+	color:white;
+	text-shadow: 2px 2px brown;
+	font-family: 'Orbitron', sans-serif;
+	font-size:4rem;
+	float:left;
+}

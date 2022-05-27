@@ -1,0 +1,106 @@
+
+body, html {
+	height: 100%;
+	margin: 0;
+	scroll-behavior: smooth;
+	font-size:16px;
+	text-align:center;
+	background-color:rgb(245,245,220);
+	background-color:coral;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.sticky{
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+}
+
+.general_main{
+	padding:10px;
+	background-color:orange;
+	border-bottom:3px solid yellow;
+}
+
+.flex{
+	display:flex;
+}
+
+article{
+	background-color:rgb(255,215,80);
+	color:brown;
+	padding:10px;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+	opacity: 1;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position:relative;
+}
+
+.header h1{
+	text-shadow: 2px 2px brown;
+	font-family: 'Tangerine', cursive;
+	font-size:3rem;
+	position:absolute;
+	top:30%;
+	width:100%;
+}
+
+.header a{
+	color:white;
+}
+
+.header{
+	position:relative;
+}
+
+.bgimg-1 {
+	background-image: url("../images/header.png");
+	min-height: 100%;
+}
+
+.aside1 div:not(.different){
+	padding:10px;
+}
+
+.footer, .aside1{
+	font-family: 'EB Garamond', serif;
+	font-size:2rem;
+}
+
+.bgimg-2 {
+	background-image: url("https://www.kindpng.com/picc/m/194-1946510_transparent-vision-png-png-download.png");
+	background-image: url("../images/vision.png");
+	min-height: 400px;
+}
+
+.main{
+    font-family: 'IBM Plex Sans', sans-serif;
+	font-size:1.5rem;	
+}
+
+.message{
+	background-color:orange;
+}
+
+.bgimg-3 {
+	background-image: url("https://www.tsouk.gr/wp-content/uploads/2017/03/%CE%9A%CE%B9%CE%BD%CE%BF%CF%8D%CE%BC%CE%B5%CE%BD%CE%B7-%CE%B5%CF%80%CE%B9%CF%86%CE%AC%CE%BD%CE%B5%CE%B9%CE%B1-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CF%83%CF%84%CE%B1-Windows-%CE%BC%CE%B5-%CE%B2%CE%AF%CE%BD%CF%84%CE%B5%CE%BF-%CE%B3%CE%B9%CE%B1-%CF%86%CF%8C%CE%BD%CF%84%CE%BF-1.jpg");
+	min-height: 400px;
+	padding:10px;
+}
+
+.bgimg-4 {
+	background-image: url("https://ak.picdn.net/shutterstock/videos/22599778/thumb/1.jpg");
+	min-height: 100px;
+}
+
+.footer{
+	background-color:coral;
+}

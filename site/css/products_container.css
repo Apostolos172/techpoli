@@ -1,0 +1,76 @@
+
+.products_container{
+	display:grid;
+	grid-template-columns:20% 20% 20% 20% 20%;
+}
+
+.products_container > .main{
+	padding:10px;
+	margin-top:10px;
+}
+
+.products_container > .aside{
+	margin-top:10px;
+	padding:1px;
+}
+
+.products_container > .aside > ul{
+	padding:0;
+	font-size:1.2rem;
+}
+
+.products_container > .aside > ul > li{
+	margin:10px;
+}
+
+
+.products_container > .aside > ul label:hover, .products_container > .aside > ul > li:hover, 
+	.products_container > .aside > ul input:hover{
+	cursor:pointer;
+}
+
+.products_container > .aside{
+	grid-column:1/2;
+	background-color:yellow;
+}
+
+.products_container > .main{
+	grid-column:2/6;
+	background-color:orange;
+	background-color:white;
+	display:grid;
+	grid-template-columns:33% 33% 33%;
+	
+}
+
+.products_container > .main > div{
+	display:inline-block;
+	background-color:purple;
+	background-color:white;
+	padding:3px;
+	margin:3px;
+	border-bottom:1px solid black;
+	border-right:1px solid black;
+	border-radius:10%;
+}
+
+.products_container > .main > div > img{
+	display:block;
+	width:70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.products_container > .main > div > h2{
+	font-size:1.1rem;
+}
+
+.products_container > .main > div > a{
+	font-size:1.2rem;
+	color:black;
+}
+
+@media only screen and (max-width: 500px) {
+.products_container > .aside{grid-column:1/6;}
+.products_container > .main{grid-column:1/6;}
+}

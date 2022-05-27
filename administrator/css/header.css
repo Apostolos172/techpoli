@@ -1,0 +1,29 @@
+
+.header{
+	display:flex;
+	font-family: 'Oswald', sans-serif;
+	padding:10px;
+	border-bottom:1px solid white;
+}
+
+.avatar {
+	width:110px;
+	height:110px;
+	margin-top:20px;
+	border-radius:50%;
+}
+
+.header > div{
+	display:inline-block;
+}
+
+.header > div:first-child{
+	width:90%;
+	
+}
+
+.header > div:last-child{
+	width:10%;
+	border-left:1px solid white;
+	border-radius:50%;
+}

@@ -1,0 +1,29 @@
+
+/* Style the search box inside the navigation bar */
+
+.navbar .search-container {
+	float: right;
+}
+
+.navbar input[type=text] {
+	padding: 6px;
+	margin-right: 2px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: none;
+}
+
+.navbar .search-container button {
+	float: right;
+	padding: 6px 10px;
+	margin-top: 8px;
+	margin-right: 16px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+	background: #ccc;
+}

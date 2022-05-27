@@ -1,0 +1,118 @@
+
+.info_container{
+	display:grid;
+	padding:5px;
+	background-color:orange;
+	grid-template-columns:25% 25% 25% 25%;
+}
+
+.info_container > .main{
+	padding:10px;
+	margin-top:10px;
+	margin-right:100px;
+}
+
+.info_container > .aside{
+	margin-top:10px;
+	padding:1px;
+	margin-left:100px;
+}
+
+.info_container > .aside > ul{
+	list-style:none;
+	text-align:left;
+	padding:0;
+	margin-left:20px;
+	font-size:1.2rem;
+}
+
+.info_container > .aside > ul > li{
+	margin:10px;
+}
+
+.info_container > .aside > ul > li > a{
+	font-family: 'EB Garamond', serif;
+	font-size:1.5rem;
+	color:black;
+	display:block;
+}
+
+.info_container > .aside > ul > li > a:hover{
+	color:brown;
+}
+
+.info_container > .aside{
+	grid-column:1/2;
+	background-color:yellow;
+}
+
+.info_container > .main{
+	grid-column:2/5;
+	background-color:orange;
+	background-color:white;
+	
+}
+
+.info_container > .main > div > div{
+	display:inline-block;
+	background-color:purple;
+	background-color:white;
+	padding:10px;
+	margin:3px;
+	width:50%;
+}
+
+.info_container > .main > div > div > table{
+	margin:auto;
+	padding:20px;
+	display:inline-block;
+	border:1px solid yellow;
+	border-radius:5%;
+	font-size:1.3rem;
+	background-color:yellow;
+}
+
+table.orders{
+	text-align:center;
+}	
+
+.info_container > .main > div > div > table > caption{
+	font-weight:bold;
+	margin-bottom:20px;
+	font-size:1.5rem;
+}
+
+.info_container > .main > div > div > table tr > td:first-child{
+	text-align:right;
+	color:purple;
+}
+
+.info_container > .main > div > div > table.orders tr > td:first-child{
+	text-align:center;
+	color:purple;
+}
+
+table.orders td, table.orders th{
+	padding:10px;
+}	
+
+.info_container > .main > div > div > img{
+	display:block;
+	width:70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.info_container > .main > div > div > h2{
+	font-size:1.1rem;
+}
+
+.info_container > .main > div > div > a{
+	font-size:1.2rem;
+	color:black;
+}
+
+@media only screen and (max-width: 500px) {
+.info_container > .aside{grid-column:1/5;}
+.info_container > .main{grid-column:1/5;}
+}

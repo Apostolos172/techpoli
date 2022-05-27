@@ -1,0 +1,30 @@
+
+div.list_of_orders > div {
+	border:1px solid black;
+	background-color:coral;
+	padding:5px;
+	display:grid;
+	grid-template-columns:16% 16% 16% 16% 16% 16%;
+}
+
+div.list_of_orders > div > span{
+	border-left:1px solid black;
+	
+}
+
+div.list_of_orders > div > span:first-child{
+	border-left:none;
+}
+
+.list_of_products_in_order > div{
+	border:1px solid black;
+	padding:10px;
+	background-color:coral;
+	display:grid;
+	grid-template-columns:16% 16% 16% 16% 16% 16%;
+}
+
+.list_of_products_in_order > div img{
+	display:inline-block;
+	width:200px;
+}

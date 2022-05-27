@@ -1,0 +1,69 @@
+
+form.signup{
+	border:1px solid #ccc;
+	background-color:orange;
+}
+
+.signup > .container a{
+	color:yellow;
+}
+
+/* Full-width input fields */
+.signup input[type=text], .signup input[type=password], .signup input[type=email] {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+.signup input[type=text]:focus, .signup input[type=password]:focus, .signup input[type=email]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+.signup hr {
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+.signup button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+}
+
+.signup button:hover {
+	opacity:1;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.signup .signupbtn {
+	width: 50%;
+}
+
+/* Add padding to container elements */
+.signup .container {
+	padding: 16px;
+}
+
+/* Clear floats */
+.signup .clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+	.signup .signupbtn {
+		width: 100%;
+	}
+}

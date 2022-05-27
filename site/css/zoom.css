@@ -1,0 +1,49 @@
+
+.zooms-container{
+	padding:10px;
+	display:flex;
+	background-color:white;
+	margin-bottom:10px;
+}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.zoom-container {
+	position: relative;
+	width: 20%;
+	margin:3px;
+	background-color:white;
+}
+
+/* Make the image to responsive */
+.image {
+	width: 100%;
+	height: auto;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #008CBA;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	transform: scale(0);
+	transition: .3s ease;
+}
+
+/* When you mouse over the container, the overlay text will "zoom" in display */
+.zoom-container:hover .overlay {
+	transform: scale(1);
+}
+
+/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+.text, .text > a {
+	color:white;
+	font-size:1rem;
+	text-align:center;
+	padding-left:3px;
+	padding-right:3px;
+} 

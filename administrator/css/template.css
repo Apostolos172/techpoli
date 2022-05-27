@@ -1,0 +1,26 @@
+
+.grid-container{
+	display:grid;
+	grid-template-columns:20% 20% 20% 20% 20%;
+	margin:0;
+}
+
+.header{grid-column:1/6;}
+.navigation{grid-column:1/2;}
+.main{grid-column:2/6;}
+.aside{grid-column:1/6;}
+.footer{grid-column:1/6;}
+
+@media only screen and (max-width: 500px) {
+.header{grid-column:1/6;}
+.navigation{grid-column:1/6;}
+.main{grid-column:1/6;}
+.aside{grid-column:1/6;}
+.footer{grid-column:1/6;}
+}
+
+.header, .navigation, .main, .aside, .footer{
+	background-color:black;
+	color:white;
+	text-align:center;
+}

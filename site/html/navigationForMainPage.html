@@ -1,0 +1,60 @@
+			
+			<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></button> 
+			
+			<div class="navbar">
+				<span class="logo">TechPoli</span>
+			</div>
+			<div id="top" class="navbar">	
+				<a href="index.php">Αρχική</a>	
+				<a href="#about">Η εταιρεία μας</a>	
+				<div class="dropdown">
+					<button class="dropbtn"><a href="site/php/view_products.php">Τα προϊόντα μας</a> <i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<div class="header_menu">
+							<h2>Όλα τα είδη τεχνολογίας θα τα βρεις εδώ!</h2>
+						</div>
+						<div class="row">
+							<div class="column">
+								<h3>Υπολογιστές</h3>
+								<a href="site/php/view_products.php?category='peripheral'">Περιφερειακά</a>
+								<a href="site/php/view_products.php?category='laptop'">Laptops</a>
+								<a href="site/php/view_products.php?category='pc'">Σταθεροί</a>
+							</div>
+							<div class="column">
+								<h3>Storage</h3>
+								<a href="site/php/view_products.php?category='usb_flash_memory'">Usb flash memories</a>
+								<a href="site/php/view_products.php?category='HDD'">HDD</a>
+								<a href="site/php/view_products.php?category='external_HDD'">Εξωτερικοί σκληροί δίσκοι</a>
+							</div>
+							<div class="column">
+								<h3>Smartphones</h3>
+								<a href="site/php/view_products.php?category='accessories'">Αξεσουάρ</a>
+								<a href="site/php/view_products.php?category='tablet'">Tablets</a>
+								<a href="site/php/view_products.php?category='smartphone'">Smartphones</a>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<a href="#contact">Επικοινωνία</a>
+				<a href="site/php/register.php">Εγγραφή χρήστη</a>
+				<?php // Create a login/account link.
+				if ( isset($_SESSION['customer_id']) ) 
+				{
+					echo '<a href="site/php/account_page.php">Ο λογαριασμός μου</a>';
+				} 
+				else 
+				{
+					echo '<a href="site/php/login_page.php">Login</a>';
+				}
+				?>
+				<a href="site/php/basket.php"><i class="material-icons">shopping_cart</i></a>
+				<a href="site/php/favourite.php"><i class="material-icons">favorite</i></a>
+				
+				<div class="search-container">
+					<form action="site/php/view_products.php" method="get">
+						<input type="text" size="60" placeholder="Αναζήτησε με κατασκευαστή, κατηγορία π.χ.:ASUS ή laptop" name="search">
+						<button type="submit"><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+			</div> 

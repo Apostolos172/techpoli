@@ -1,0 +1,41 @@
+
+div.basic{
+	display:flex;
+}
+
+div.basic a{
+	text-decoration:none;
+}
+
+div.basic a:hover{
+	color:white;
+}
+
+
+div.basic > div{
+	display:inline-block;
+	width:49%;
+	padding:10px;
+	margin:10px;
+	background-color:rgba(140,146,172,0.0);
+	text-align:center;
+}
+
+div.basic > div > ul{
+	list-style-type:none;
+	margin:0;
+	padding-left:0;
+}
+
+div.basic address{
+	display:inline;
+}
+
+.copy_design{
+	background-color:white;
+	padding:10px;
+}
+
+.copy_design > span{
+	color:red;
+}
