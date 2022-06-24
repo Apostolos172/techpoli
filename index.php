@@ -70,7 +70,7 @@
 		mysqli_free_result ($r); // Free up the resources.	
 					
 	}
-	lineBreak();	
+	lineBreak();
 
 ?>
 			
